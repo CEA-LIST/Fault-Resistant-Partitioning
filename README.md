@@ -16,7 +16,7 @@ cmake src -Bbuild && cmake --build build
 less out/skinny_red3/log
 
 # Evaluate Ibex's Register file robustness to 1 faults (1min 30) and print verification logs
-./build/k-partitions regfile &&
+./build/k-partitions regfile_k1 &&
 less out/regfile_k1/log
 ```
 
