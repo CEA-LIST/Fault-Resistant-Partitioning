@@ -1,0 +1,30 @@
+# -----------------------------------------------------------------------------
+#       Standard prep script to generate bit-level netlist with yosys
+# -----------------------------------------------------------------------------
+#  - This script does not 'clean purge' and 'flatten' the design at the end
+#    this is done to keep some useless wires and have better 
+#    expressiveness when reading counterexamples in VCD files
+
+read_verilog -sv -defer ../wrapper.v ../RTL/generated/*.v
+hierarchy -top syn_wrap
+
+synth; techmap
+opt_expr
+clean 
+async2sync
+clean
+rename -enumerate
+clean
+
+uniquify
+hierarchy -check
+flatten
+
+opt_expr
+clean
+rename -enumerate
+clean
+
+write_rtlil           synth_ibex.il
+write_json            synth_ibex.json
+write_verilog -noattr synth_ibex.v

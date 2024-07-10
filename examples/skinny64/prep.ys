@@ -1,0 +1,25 @@
+ghdl Skinny64Enc
+hierarchy -top Skinny64Enc
+
+synth; techmap
+opt_expr
+clean 
+async2sync
+clean
+rename -enumerate
+clean
+
+uniquify
+hierarchy -check
+flatten
+
+opt_expr
+clean
+rename -enumerate
+clean
+
+stat
+
+write_rtlil Skinny64Enc.il
+write_json Skinny64Enc.json
+write_verilog -noattr Skinny64Enc.v

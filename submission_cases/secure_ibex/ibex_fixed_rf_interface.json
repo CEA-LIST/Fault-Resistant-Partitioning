@@ -1,0 +1,94 @@
+{
+  "creator": "Yosys 0.29 (git sha1 6abe47a4e, gcc 11.3.0-1ubuntu1~22.04.1 -fPIC -Os)",
+  "modules": {
+    "register_file_ced": {
+      "attributes": {
+        "hdlname": "u_top gen_regfile_ff.register_file_i",
+        "top": "00000000000000000000000000000001",
+        "src": "synth_wrapper.v:1.1-168.10"
+      },
+      "ports": {
+        "u_top.gen_regfile_ff.register_file_i.clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.rst_ni": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.test_en_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "u_top.u_ibex_core.wb_stage_i.dummy_instr_id_i": {
+          "direction": "input",
+          "bits": [ 4045 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.dummy_instr_wb_i": {
+          "direction": "input",
+          "bits": [ 4044 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.raddr_a_i": {
+          "direction": "input",
+          "bits": [ 4039, 4040, 4041, 4042, 4043 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.raddr_b_i": {
+          "direction": "input",
+          "bits": [ 4034, 4035, 4036, 4037, 4038 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.waddr_a_i": {
+          "direction": "input",
+          "bits": [ 4029, 4030, 4031, 4032, 4033 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.wdata_a_i": {
+          "direction": "input",
+          "bits": [ 3989, 3990, 3991, 3992, 3993, 3994, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.we_a_i": {
+          "direction": "input",
+          "bits": [ 4028 ]
+        },
+
+
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.rf_rdata_a": {
+          "direction": "output",
+          "bits": [ 2966, 2968, 2970, 2972, 2974, 2976, 2978, 2980, 2982, 2984, 2986, 2988, 2990, 2992, 2994, 2996, 2998, 3000, 3002, 3004, 3006, 3008, 3010, 3012, 3014, 3016, 3018, 3020, 3022, 3024, 3026, 3028 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.rf_rdata_b": {
+          "direction": "output",
+          "bits": [ 2888, 2890, 2892, 2894, 2896, 2898, 2900, 2902, 2904, 2906, 2908, 2910, 2912, 2914, 2916, 2918, 2920, 2922, 2924, 2926, 2928, 2930, 2932, 2934, 2936, 2938, 2940, 2942, 2944, 2946, 2948, 2950 ]
+        },
+        "u_top.u_ibex_core.rf_rdata_a": {
+          "direction": "output",
+          "bits": [ 4085, 4086, 4087, 4088, 4089, 4090, 4091, 4092, 4093, 4094, 4095, 4096, 4097, 4098, 4099, 4100, 4101, 4102, 4103, 4104, 4105, 4106, 4107, 4108, 4109, 4110, 4111, 4112, 4113, 4114, 4115, 4116 ]
+        },
+        "u_top.u_ibex_core.rf_rdata_b": {
+          "direction": "output",
+          "bits": [ 4046, 4047, 4048, 4049, 4050, 4051, 4052, 4053, 4054, 4055, 4056, 4057, 4058, 4059, 4060, 4061, 4062, 4063, 4064, 4065, 4066, 4067, 4068, 4069, 4070, 4071, 4072, 4073, 4074, 4075, 4076, 4077 ]
+        },
+        
+
+        "u_top.gen_regfile_ff.register_file_i.err_o": {
+          "direction": "output",
+          "bits": [ 1025 ]
+        },
+        "u_top.u_ibex_core.gen_regfile_ecc.regfile_ecc_dec_a.err_o": {
+          "direction": "output",
+          "bits": [ 68934, 68937 ]
+        },
+        "u_top.u_ibex_core.gen_regfile_ecc.regfile_ecc_dec_b.err_o": {
+          "direction": "output",
+          "bits": [ 68933, 68936 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.gen_regfile_ecc.regfile_ecc_dec_a.err_o": {
+          "direction": "output",
+          "bits": [ 4264, 4267 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.gen_regfile_ecc.regfile_ecc_dec_b.err_o": {
+          "direction": "output",
+          "bits": [ 4263, 4266 ]
+        }
+      }
+    }
+  }
+}

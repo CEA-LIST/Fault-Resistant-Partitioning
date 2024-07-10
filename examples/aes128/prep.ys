@@ -1,0 +1,25 @@
+ghdl Cipher
+hierarchy -top Cipher
+
+synth; techmap
+opt_expr
+clean 
+async2sync
+clean
+rename -enumerate
+clean
+
+uniquify
+hierarchy -check
+flatten
+
+opt_expr
+clean
+rename -enumerate
+clean
+
+stat
+
+write_rtlil Cipher.il
+write_json Cipher.json
+write_verilog -noattr Cipher.v

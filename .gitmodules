@@ -1,0 +1,12 @@
+[submodule "src/json"]
+	path = src/json
+	url = https://github.com/nlohmann/json.git
+[submodule "src/cxxsat"]
+	path = src/cxxsat
+	url = https://github.com/vedadux/cxxsat
+[submodule "examples/ImpeccableCircuits"]
+	path = examples/ImpeccableCircuits
+	url = https://github.com/emsec/ImpeccableCircuits.git
+[submodule "examples/ibex"]
+	path = examples/ibex
+	url = https://github.com/lowRISC/ibex

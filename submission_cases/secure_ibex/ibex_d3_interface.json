@@ -1,0 +1,363 @@
+{
+  "creator": "Yosys 0.29 (git sha1 6abe47a4e, gcc 11.3.0-1ubuntu1~22.04.1 -fPIC -Os)",
+  "modules": {
+    "register_file_ced": {
+      "attributes": {
+        "hdlname": "u_top gen_regfile_ff.register_file_i",
+        "top": "00000000000000000000000000000001",
+        "src": "synth_wrapper.v:1.1-168.10"
+      },
+      "ports": {
+        "u_top.gen_regfile_ff.register_file_i.clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.rst_ni": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.test_en_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "u_top.u_ibex_core.wb_stage_i.dummy_instr_id_i": {
+          "direction": "input",
+          "bits": [ 4824 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.dummy_instr_wb_i": {
+          "direction": "input",
+          "bits": [ 4823 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.raddr_a_i": {
+          "direction": "input",
+          "bits": [ 4818, 4819, 4820, 4821, 4822 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.raddr_b_i": {
+          "direction": "input",
+          "bits": [ 4813, 4814, 4815, 4816, 4817 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.waddr_a_i": {
+          "direction": "input",
+          "bits": [ 4808, 4809, 4810, 4811, 4812 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.wdata_a_i": {
+          "direction": "input",
+          "bits": [ 4768, 4769, 4770, 4771, 4772, 4773, 4774, 4775, 4776, 4777, 4778, 4779, 4780, 4781, 4782, 4783, 4784, 4785, 4786, 4787, 4788, 4789, 4790, 4791, 4792, 4793, 4794, 4795, 4796, 4797, 4798, 4799, 4800, 4801, 4802, 4803, 4804, 4805, 4806 ]
+        },
+        "u_top.gen_regfile_ff.register_file_i.we_a_i": {
+          "direction": "input",
+          "bits": [ 4807 ]
+        },
+
+
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.rf_rdata_a": {
+          "direction": "output",
+          "bits": [ 2937, 2939, 2941, 2943, 2945, 2947, 2949, 2951, 2953, 2955, 2957, 2959, 2961, 2963, 2965, 2967, 2969, 2971, 2973, 2975, 2977, 2979, 2981, 2983, 2985, 2987, 2989, 2991, 2993, 2995, 2997, 2999 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.rf_rdata_b": {
+          "direction": "output",
+          "bits": [ 2859, 2861, 2863, 2865, 2867, 2869, 2871, 2873, 2875, 2877, 2879, 2881, 2883, 2885, 2887, 2889, 2891, 2893, 2895, 2897, 2899, 2901, 2903, 2905, 2907, 2909, 2911, 2913, 2915, 2917, 2919, 2921 ]
+        },
+        "u_top.u_ibex_core.rf_rdata_a": {
+          "direction": "output",
+          "bits": [ 4864, 4865, 4866, 4867, 4868, 4869, 4870, 4871, 4872, 4873, 4874, 4875, 4876, 4877, 4878, 4879, 4880, 4881, 4882, 4883, 4884, 4885, 4886, 4887, 4888, 4889, 4890, 4891, 4892, 4893, 4894, 4895 ]
+        },
+        "u_top.u_ibex_core.rf_rdata_b": {
+          "direction": "output",
+          "bits": [ 4825, 4826, 4827, 4828, 4829, 4830, 4831, 4832, 4833, 4834, 4835, 4836, 4837, 4838, 4839, 4840, 4841, 4842, 4843, 4844, 4845, 4846, 4847, 4848, 4849, 4850, 4851, 4852, 4853, 4854, 4855, 4856 ]
+        },
+        
+
+        "u_top.gen_regfile_ff.register_file_i.err_o": {
+          "direction": "output",
+          "bits": [ 1022 ]
+        },
+        "u_top.u_ibex_core.gen_regfile_ecc.regfile_ecc_dec_a.err_o": {
+          "direction": "output",
+          "bits": [ 69237, 69240 ]
+        },
+        "u_top.u_ibex_core.gen_regfile_ecc.regfile_ecc_dec_b.err_o": {
+          "direction": "output",
+          "bits": [ 69236, 69239 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.gen_regfile_ecc.regfile_ecc_dec_a.err_o": {
+          "direction": "output",
+          "bits": [ 5043, 5046 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.gen_regfile_ecc.regfile_ecc_dec_b.err_o": {
+          "direction": "output",
+          "bits": [ 5042, 5045 ]
+        }
+      }
+    },
+
+    "ibex_lockstep": {
+      "attributes": {
+        "hdlname": "u_top"
+      },
+      "ports": {
+        "u_top.clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "u_top.rst_ni": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "u_top.hart_id_i": {
+          "direction": "input",
+          "bits": [ 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46 ]
+        },
+        "u_top.boot_addr_i": {
+          "direction": "input",
+          "bits": [ 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78 ]
+        },
+        "u_top.instr_gnt_i": {
+          "direction": "input",
+          "bits": [ 79 ]
+        },
+        "u_top.instr_rvalid_i": {
+          "direction": "input",
+          "bits": [ 80 ]
+        },
+        "u_top.instr_rdata_core": {
+          "direction": "input",
+          "bits": [ 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119 ]
+        },
+        "u_top.instr_err_i": {
+          "direction": "input",
+          "bits": [ 120 ]
+        },
+        "u_top.data_gnt_i": {
+          "direction": "input",
+          "bits": [ 121 ]
+        },
+        "u_top.data_rvalid_i": {
+          "direction": "input",
+          "bits": [ 122 ]
+        },
+        "u_top.data_err_i": {
+          "direction": "input",
+          "bits": [ 162 ]
+        },
+        "u_top.data_rdata_core": {
+          "direction": "input",
+          "bits": [ 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161 ]
+        },
+        "u_top.debug_req_i": {
+          "direction": "input",
+          "bits": [ 375 ]
+        },
+        "u_top.fetch_enable_i": {
+          "direction": "input",
+          "bits": [ "1", "0", "1", "0" ]
+        },
+        "u_top.ic_data_rdata": {
+          "direction": "input",
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ]
+        },
+        "u_top.ic_tag_rdata": {
+          "direction": "input",
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ]
+        },
+        "u_top.irq_external_i": {
+          "direction": "input",
+          "bits": [ 165 ]
+        },
+        "u_top.irq_fast_i": {
+          "direction": "input",
+          "bits": [ 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180 ]
+        },
+        "u_top.irq_nm_i": {
+          "direction": "input",
+          "bits": [ 181 ]
+        },
+        "u_top.irq_software_i": {
+          "direction": "input",
+          "bits": [ 163 ]
+        },
+        "u_top.irq_timer_i": {
+          "direction": "input",
+          "bits": [ 164 ]
+        },
+        "u_top.scramble_key_valid_q": {
+          "direction": "input",
+          "bits": [ "1" ]
+        },
+        "u_top.scan_rst_ni": {
+          "direction": "input",
+          "bits": [ 380 ]
+        },
+        "u_top.test_en_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.rf_rdata_a": {
+          "direction": "input",
+          "bits": [ 2937, 2939, 2941, 2943, 2945, 2947, 2949, 2951, 2953, 2955, 2957, 2959, 2961, 2963, 2965, 2967, 2969, 2971, 2973, 2975, 2977, 2979, 2981, 2983, 2985, 2987, 2989, 2991, 2993, 2995, 2997, 2999 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.rf_rdata_b": {
+          "direction": "input",
+          "bits": [ 2859, 2861, 2863, 2865, 2867, 2869, 2871, 2873, 2875, 2877, 2879, 2881, 2883, 2885, 2887, 2889, 2891, 2893, 2895, 2897, 2899, 2901, 2903, 2905, 2907, 2909, 2911, 2913, 2915, 2917, 2919, 2921 ]
+        },
+        "u_top.u_ibex_core.rf_rdata_a": {
+          "direction": "input",
+          "bits": [ 4864, 4865, 4866, 4867, 4868, 4869, 4870, 4871, 4872, 4873, 4874, 4875, 4876, 4877, 4878, 4879, 4880, 4881, 4882, 4883, 4884, 4885, 4886, 4887, 4888, 4889, 4890, 4891, 4892, 4893, 4894, 4895 ]
+        },
+        "u_top.u_ibex_core.rf_rdata_b": {
+          "direction": "input",
+          "bits": [ 4825, 4826, 4827, 4828, 4829, 4830, 4831, 4832, 4833, 4834, 4835, 4836, 4837, 4838, 4839, 4840, 4841, 4842, 4843, 4844, 4845, 4846, 4847, 4848, 4849, 4850, 4851, 4852, 4853, 4854, 4855, 4856 ]
+        },
+
+        "u_top.gen_regfile_ff.register_file_i.err_o": {
+          "direction": "input",
+          "bits": [ 1022 ]
+        },
+        "u_top.u_ibex_core.gen_regfile_ecc.regfile_ecc_dec_a.err_o": {
+          "direction": "input",
+          "bits": [ 69237, 69240 ]
+        },
+        "u_top.u_ibex_core.gen_regfile_ecc.regfile_ecc_dec_b.err_o": {
+          "direction": "input",
+          "bits": [ 69236, 69239 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.gen_regfile_ecc.regfile_ecc_dec_a.err_o": {
+          "direction": "input",
+          "bits": [ 5043, 5046 ]
+        },
+        "u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core.gen_regfile_ecc.regfile_ecc_dec_b.err_o": {
+          "direction": "input",
+          "bits": [ 5042, 5045 ]
+        },
+
+
+
+        "u_top.instr_req_o": {
+          "direction": "output",
+          "bits": [ 381 ]
+        },
+        "u_top.instr_addr_o": {
+          "direction": "output",
+          "bits": [ "0", "0", 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411 ]
+        },
+        "u_top.data_req_o": {
+          "direction": "output",
+          "bits": [ 412 ]
+        },
+        "u_top.data_we_o": {
+          "direction": "output",
+          "bits": [ 413 ]
+        },
+        "u_top.data_be_o": {
+          "direction": "output",
+          "bits": [ 414, 415, 416, 417 ]
+        },
+        "u_top.data_addr_o": {
+          "direction": "output",
+          "bits": [ "0", "0", 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447 ]
+        },
+        "u_top.data_wdata_core": {
+          "direction": "output",
+          "bits": [ 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486 ]
+        },
+        "u_top.core_busy_d": {
+          "direction": "output",
+          "bits": [ 1038, 1039, 1032, 1034 ]
+        },
+        "u_top.crash_dump_o": {
+          "direction": "output",
+          "bits": [ 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, "0", 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645 ]
+        },
+        "u_top.double_fault_seen_o": {
+          "direction": "output",
+          "bits": [ 646 ]
+        },
+        "u_top.dummy_instr_id": {
+          "direction": "output",
+          "bits": [ 4824 ]
+        },
+        "u_top.dummy_instr_wb": {
+          "direction": "output",
+          "bits": [ 4823 ]
+        },
+        "u_top.ic_data_addr": {
+          "direction": "output",
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0" ]
+        },
+        "u_top.ic_data_req": {
+          "direction": "output",
+          "bits": [ "0", "0" ]
+        },
+        "u_top.ic_data_wdata": {
+          "direction": "output",
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ]
+        },
+        "u_top.ic_data_write": {
+          "direction": "output",
+          "bits": [ "0" ]
+        },
+        "u_top.ic_scr_key_req": {
+          "direction": "output",
+          "bits": [ "0" ]
+        },
+        "u_top.ic_tag_addr": {
+          "direction": "output",
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0" ]
+        },
+        "u_top.ic_tag_req": {
+          "direction": "output",
+          "bits": [ "0", "0" ]
+        },
+        "u_top.ic_tag_wdata": {
+          "direction": "output",
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ]
+        },
+        "u_top.ic_tag_write": {
+          "direction": "output",
+          "bits": [ "0" ]
+        },
+        "u_top.irq_pending": {
+          "direction": "output",
+          "bits": [ 1017 ]
+        },
+        "u_top.rf_raddr_a": {
+          "direction": "output",
+          "bits": [ 4818, 4819, 4820, 4821, 4822 ]
+        },
+        "u_top.rf_raddr_b": {
+          "direction": "output",
+          "bits": [ 4813, 4814, 4815, 4816, 4817 ]
+        },
+        "u_top.rf_waddr_wb": {
+          "direction": "output",
+          "bits": [ 4808, 4809, 4810, 4811, 4812 ]
+        },
+        "u_top.rf_wdata_wb_ecc": {
+          "direction": "output",
+          "bits": [ 4768, 4769, 4770, 4771, 4772, 4773, 4774, 4775, 4776, 4777, 4778, 4779, 4780, 4781, 4782, 4783, 4784, 4785, 4786, 4787, 4788, 4789, 4790, 4791, 4792, 4793, 4794, 4795, 4796, 4797, 4798, 4799, 4800, 4801, 4802, 4803, 4804, 4805, 4806 ]
+        },
+        "u_top.rf_we_wb": {
+          "direction": "output",
+          "bits": [ 4807 ]
+        },
+
+
+        "u_top.alert_minor_o": {
+          "direction": "output",
+          "bits": [ "0" ]
+        },
+        "u_top.alert_major_internal_o": {
+          "direction": "output",
+          "bits": [ 648 ]
+        },
+        "u_top.alert_major_bus_o": {
+          "direction": "output",
+          "bits": [ 649 ]
+        }
+        
+
+      }
+    }
+  }
+}
