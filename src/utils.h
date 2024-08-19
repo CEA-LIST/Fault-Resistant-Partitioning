@@ -5,7 +5,9 @@
  * DOCUMENT: https://eprint.iacr.org/2024/247
  * -----------------------------------------------------------------------------
  *
- * Copyright 2024, Vedad Hadžić and Simon Tollec
+ * Copyright 2024, Commissariat à l'énergie atomique et aux énergies
+ * alternatives (CEA), France and Graz University of Technology, Austria
+ *
  * Licensed under the Apache License, Version 2.0, see LICENSE for details.
  *
  */
