@@ -15,6 +15,7 @@
 #ifndef CELL_TYPES_H
 #define CELL_TYPES_H
 
+#include <cstdint>
 
 /// Enum class for cell types
 /// The cell types are encoded as follows:
