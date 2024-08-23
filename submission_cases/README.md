@@ -82,7 +82,7 @@ The following describes how to reproduce results for the register file.
 
 Running the following command from the root directory produces the `out/regfile_k1/log` log file.
 ```bash
-$ ./build/k-partitions regfile
+$ ./build/k-partitions regfile_k1
 ```
 
 Inspecting the log file reveals the circuit has 8332 cells (line 2), including 1326 registers (line 6).
