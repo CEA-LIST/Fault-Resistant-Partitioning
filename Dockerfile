@@ -14,10 +14,6 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Create and switch to the non-root user
-RUN useradd -m dockeruser
-USER dockeruser
-
 # Set working directory
 VOLUME /artifact
 WORKDIR /artifact

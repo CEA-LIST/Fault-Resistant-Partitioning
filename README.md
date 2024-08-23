@@ -49,7 +49,7 @@ The project is built in the `build` directory.
 > Alternatively, a Dockerfile sets the execution environment in a container and builds the `k-partitions` tool in the current folder using a mount point
 > ```
 > docker build -t kfrp-artifact .
-> docker run -v $(pwd):/artifact -it kfrp-artifact
+> docker run -u $(id -u):$(id -g) -v $(pwd):/artifact -it kfrp-artifact
 
 
 ## Usage
